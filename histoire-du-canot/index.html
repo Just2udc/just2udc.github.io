@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr_ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>L'Histore du Canot</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        transition: 1s;
+      }
+      @font-face {
+        font-family: lexend-black;
+        src: url(./assets/fonts/lexend-black.ttf);
+      }
+      @font-face {
+        font-family: lexend-semiBold;
+        src: url(./assets/fonts/Lexend-SemiBold.ttf);
+      }
+      @font-face {
+        font-family: lexend-regular;
+        src: url(./assets/fonts/Lexend-Regular.ttf);
+      }
+      h2 {
+        font-family: lexend-black;
+        font-size: 96px;
+      }
+      main {
+        /* margin-left: 1000px; */
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+      }
+      .img {
+        width: 100%;
+        height: auto;
+        z-index: 0;
+      }
+      .text-block div {
+        position: initial;
+      }
+      .buble {
+        z-index: 10;
+        opacity: 0;
+        display: none;
+      }
+      #bg-1 {
+        z-index: 1;
+      }
+      #bg-2 {
+        z-index: 0;
+        display: none;
+      }
+      #bg-1-bottom {
+        top: 0;
+        z-index: 4;
+      }
+      #title-1 {
+        z-index: 10;
+        width: 1920px;
+        height: 1080px;
+        left: -980px;
+      }
+      #table-matieres {
+        width: 50%;
+        top: 100px;
+        left: -2180px;
+      }
+      #table-matieres h2 {
+        position: relative;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.6);
+        right: 0;
+        top: 0;
+        z-index: 5;
+      }
+      #intro-text {
+        display: none;
+        left: -1000px;
+      }
+      #intro-text h3 {
+        position: relative;
+        /* display: none; */
+        z-index: 5;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: lexend-semiBold;
+        font-size: 60px;
+        margin: auto 0;
+      }
+      #intro-text p {
+        position: relative;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: lexend-regular;
+        font-size: 40px;
+        z-index: 5;
+        margin-left: 180px;
+        width: 800px;
+      }
+      #intro-text img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        opacity: 0.6;
+        margin-right: 10px;
+        z-index: 5;
+      }
+    </style>
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <img src="./assets/img/bg-1.jpg" alt="Background 1" class="img" id="bg-1" />
+      <img src="./assets/img/bg-1-bottom.png" alt="Title 1" class="img" id="bg-1-bottom" />
+      <img src="./assets/img/bg-2.jpg" alt="bark-canoe" id="bg-2" />
+
+      <img src="./assets/img/title-1-redac.png" alt="Title 1" class="img" id="title-1" />
+      <div id="table-matieres">
+        <h2 id="tm-intro">Intro |</h2>
+        <h2 id="tm-origines">Origines |</h2>
+        <h2 id="tm-fab">Fabrication |</h2>
+        <h2 id="tm-evo">Évolution |</h2>
+        <h2 id="tm-conclusion">Conclusion |</h2>
+      </div>
+      <div class="text-block" id="intro-text">
+        <!-- What -->
+        <div id="what">
+          <div style="display: flex; flex-direction: row">
+            <img src="./assets/img/interogation.svg" alt="dictionary" />
+            <h3>C'est quoi?</h3>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus laboriosam aspernatur officiis pariatur soluta autem recusandae omnis
+            tenetur ad adipisci.
+          </p>
+        </div>
+        <!-- Etymologie -->
+        <div id="etymologie">
+          <div style="display: flex; flex-direction: row">
+            <img src="./assets/img/dictionary.svg" alt="dictionary" />
+            <h3>Etymologie</h3>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus laboriosam aspernatur officiis pariatur soluta autem recusandae omnis
+            tenetur ad adipisci.
+          </p>
+        </div>
+      </div>
+      <img src="./assets/img/buble-birch.png" alt="brich" class="buble" id="buble-birch" />
+      <img src="./assets/img/buble-frene.png" alt="brich" class="buble" id="buble-frene" />
+      <img src="./assets/img/buble-leather.png" alt="brich" class="buble" id="buble-leather" />
+      <img src="./assets/img/buble-resin.png" alt="brich" class="buble" id="buble-resin" />
+      <img src="./assets/img/buble-roots.png" alt="brich" class="buble" id="buble-roots" />
+    </main>
+  </body>
+</html>
