@@ -106,6 +106,63 @@
         margin-right: 10px;
         z-index: 5;
       }
+      #bg-2-left {
+        z-index: 9;
+        display: none;
+      }
+      #bg-2-left-more {
+        z-index: 7;
+        display: none;
+      }
+      #timeline {
+        z-index: 10;
+        display: none;
+        opacity: 0.6;
+      }
+      .timeline-pos-1 {
+        left: -700px;
+        z-index: 8;
+      }
+      .timeline-pos-2 {
+        left: 100px;
+        z-index: 6;
+      }
+      .timeline-elements {
+        max-width: 700px;
+        max-height: 400px;
+        width: fit-content;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        top: 400px;
+        display: none;
+      }
+      .timeline-elements div {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+      }
+      .timeline-elements h3 {
+        position: relative;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: lexend-semiBold;
+        font-size: 40px;
+        margin: auto 0;
+      }
+      .timeline-elements p {
+        font-size: 25px;
+        font-family: lexend-regular;
+        color: rgba(255, 255, 255, 0.6);
+        position: relative;
+        margin-left: 90px;
+      }
+      .timeline-elements img {
+        position: relative;
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+      }
     </style>
     <script src="./assets/js/script.js" defer></script>
   </head>
@@ -139,7 +196,7 @@
         <div id="etymologie">
           <div style="display: flex; flex-direction: row">
             <img src="./assets/img/dictionary.svg" alt="dictionary" />
-            <h3>Etymologie</h3>
+            <h3>Étymologie</h3>
           </div>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus laboriosam aspernatur officiis pariatur soluta autem recusandae omnis
@@ -152,6 +209,42 @@
       <img src="./assets/img/buble-leather.png" alt="brich" class="buble" id="buble-leather" />
       <img src="./assets/img/buble-resin.png" alt="brich" class="buble" id="buble-resin" />
       <img src="./assets/img/buble-roots.png" alt="brich" class="buble" id="buble-roots" />
+      <img src="./assets/img/bg-2-left-more.png" alt="Background 2 left" id="bg-2-left-more" />
+      <img src="./assets/img/bg-2-left.png" alt="Background 2 left" id="bg-2-left" />
+      <img src="./assets/img/timeline.png" alt="timeline" id="timeline" />
+      <div class="timeline-elements timeline-pos-1" id="6315">
+        <div>
+          <img src="./assets/img/pirogue.jpg" alt="pirogue" />
+          <h3>La Pirogue de Pesse</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex quasi unde illo temporibus rem, ipsa voluptatibus voluptate veniam
+          quibusdam quisquam explicabo recusandae debitis beatae. Earum, incidunt! Ducimus unde quibusdam officia commodi eum hic itaque maiores.
+          Natus, nisi magnam voluptas ullam voluptatum, incidunt aut ratione reprehenderit autem quis minus obcaecati?
+        </p>
+      </div>
+      <div class="timeline-elements timeline-pos-1" id="1492">
+        <div>
+          <img src="./assets/img/christophe.jpg" alt="pirogue" />
+          <h3>Première mention en Europe</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex quasi unde illo temporibus rem, ipsa voluptatibus voluptate veniam
+          quibusdam quisquam explicabo recusandae debitis beatae. Earum, incidunt! Ducimus unde quibusdam officia commodi eum hic itaque maiores.
+          Natus, nisi magnam voluptas ullam voluptatum, incidunt aut ratione reprehenderit autem quis minus obcaecati?
+        </p>
+      </div>
+      <div class="timeline-elements timeline-pos-2" id="1534">
+        <div>
+          <img src="./assets/img/jacques.jpg" alt="pirogue" />
+          <h3>Découverte par Jaques Cartier</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex quasi unde illo temporibus rem, ipsa voluptatibus voluptate veniam
+          quibusdam quisquam explicabo recusandae debitis beatae. Earum, incidunt! Ducimus unde quibusdam officia commodi eum hic itaque maiores.
+          Natus, nisi magnam voluptas ullam voluptatum, incidunt aut ratione reprehenderit autem quis minus obcaecati?
+        </p>
+      </div>
     </main>
   </body>
 </html>

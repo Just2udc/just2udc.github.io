@@ -18,56 +18,47 @@ document.addEventListener("keydown", function (evt) {
   if (evt.code === "ArrowLeft" && bCanMoveBackward == true) {
     console.log("LeftKey");
     nSlideNeed = nSlideNeed - 1;
-    // Slide Movement
-    if (nSlideNeed === 1 && nSlideCurrent != 1) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide1();
-    } else if (nSlideNeed === 2 && nSlideCurrent != 2) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide2();
-    } else if (nSlideNeed === 3 && nSlideCurrent != 3) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide3();
-    } else if (nSlideNeed === 4 && nSlideCurrent != 4) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide4();
-    } else if (nSlideNeed === 5 && nSlideCurrent != 5) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide5();
-    }
+    slideMove();
   }
   if (evt.code === "ArrowRight" && bCanMoveForward == true) {
     console.log("RightKey");
     nSlideNeed = nSlideNeed + 1;
-    // Slide Movement
-    if (nSlideNeed === 1 && nSlideCurrent != 1) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide1();
-    } else if (nSlideNeed === 2 && nSlideCurrent != 2) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide2();
-    } else if (nSlideNeed === 3 && nSlideCurrent != 3) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide3();
-    } else if (nSlideNeed === 4 && nSlideCurrent != 4) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide4();
-    } else if (nSlideNeed === 5 && nSlideCurrent != 5) {
-      bCanMoveForward = false;
-      bCanMoveBackward = false;
-      slide5();
-    }
+    slideMove();
   }
 });
+
+function slideMove() {
+  // Slide Movement
+  if (nSlideNeed === 1 && nSlideCurrent != 1) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide1();
+  } else if (nSlideNeed === 2 && nSlideCurrent != 2) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide2();
+  } else if (nSlideNeed === 3 && nSlideCurrent != 3) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide3();
+  } else if (nSlideNeed === 4 && nSlideCurrent != 4) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide4();
+  } else if (nSlideNeed === 5 && nSlideCurrent != 5) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide5();
+  } else if (nSlideNeed === 6 && nSlideCurrent != 6) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide6();
+  } else if (nSlideNeed === 7 && nSlideCurrent != 7) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide7();
+  }
+}
 
 // Main
 function slide1() {
@@ -191,6 +182,7 @@ function slide4() {
   // Evo
   document.getElementById("tm-evo").style.top = "-50px";
   document.getElementById("tm-evo").style.right = "-105vw";
+  document.getElementById("tm-evo").style.color = "rgba(255,255,255,0.6)";
   document.getElementById("tm-evo").style.position = "absolute";
   document.getElementById("tm-evo").style.fontSize = "125px";
 
@@ -218,6 +210,10 @@ function slide4() {
 
   document.getElementById("tm-fab").style.right = "-105vw";
 
+  document.getElementById("timeline").style.display = "none";
+  document.getElementById("tm-evo").style.display = "none";
+  document.getElementById("6315").style.display = "none";
+
   nSlideCurrent = 4;
   bCanMoveForward = true;
   bCanMoveBackward = true;
@@ -230,6 +226,16 @@ function slide5() {
   document.getElementById("tm-origines").style.zIndex = "0";
 
   document.getElementById("bg-1-bottom").style.top = "-1080px";
+  document.getElementById("timeline").style.left = "1920px";
+  document.getElementById("timeline").style.display = "inline";
+  document.getElementById("tm-evo").style.display = "block";
+  document.getElementById("tm-evo").style.right = "-105vw";
+  document.getElementById("bg-2-left").style.display = "none";
+  document.getElementById("bg-2-left-more").style.display = "none";
+  document.getElementById("6315").style.left = "-740px";
+  document.getElementById("6315").style.display = "block";
+  document.getElementById("1492").style.display = "none";
+  document.getElementById("1534").style.display = "none";
 
   setTimeout(slide5_1, 500);
   function slide5_1() {
@@ -258,6 +264,59 @@ function slide5() {
     document.getElementById("buble-leather").style.opacity = "1";
 
     nSlideCurrent = 5;
+    bCanMoveForward = true;
+    bCanMoveBackward = true;
+  }
+}
+
+function slide6() {
+  document.getElementById("buble-frene").style.opacity = "0";
+  document.getElementById("buble-roots").style.opacity = "0";
+  document.getElementById("buble-birch").style.opacity = "0";
+  document.getElementById("buble-resin").style.opacity = "0";
+  document.getElementById("buble-leather").style.opacity = "0";
+  document.getElementById("tm-fab").style.right = "-105vw";
+
+  setTimeout(slide6_1, 500);
+  function slide6_1() {
+    document.getElementById("tm-evo").style.right = "-50vw";
+    document.getElementById("timeline").style.left = "0";
+    document.getElementById("bg-2-left").style.display = "inline";
+    document.getElementById("bg-2-left-more").style.display = "inline";
+
+    setTimeout(slide6_2, 1000);
+    function slide6_2() {
+      document.getElementById("6315").style.left = "200px";
+      document.getElementById("1492").style.left = "-740px";
+      document.getElementById("1492").style.display = "block";
+      document.getElementById("1534").style.left = "100px";
+      document.getElementById("1534").style.display = "block";
+
+      nSlideCurrent = 6;
+      bCanMoveForward = true;
+      bCanMoveBackward = true;
+    }
+  }
+}
+function slide7() {
+  document.getElementById("6315").style.left = "-740px";
+
+  setTimeout(slide7_1, 1000);
+  function slide7_1() {
+    document.getElementById("timeline").style.left = "-1918px";
+
+    setTimeout(slide7_2, 1000);
+  }
+  function slide7_2() {
+    document.getElementById("1492").style.left = "200px";
+
+    setTimeout(slide7_3, 1000);
+  }
+  function slide7_3() {
+    document.getElementById("1534").style.left = "1160px";
+
+    nSlideCurrent = 7;
+    // bCanMoveForward = true
     bCanMoveBackward = true;
   }
 }
