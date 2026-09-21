@@ -127,6 +127,7 @@ function slide3() {
   document.getElementById("tm-intro").style.fontSize = "125px";
 
   document.getElementById("tm-origines").style.right = "-105vw";
+  document.getElementById("pirogues-div").style.left = "-612px";
   document.getElementById("tm-fab").style.right = "-105vw";
   document.getElementById("tm-evo").style.right = "-105vw";
   document.getElementById("tm-conclusion").style.right = "-105vw";
@@ -159,6 +160,8 @@ function slide4() {
 
   document.getElementById("tm-origines").style.right = "-50vw";
   document.getElementById("tm-origines").style.zIndex = "1";
+  document.getElementById("pirogues-div").style.zIndex = "1";
+  document.getElementById("pirogues-div").style.left = "0";
 
   document.getElementById("bg-2").style.top = "1080px";
   document.getElementById("bg-2").style.display = "inline";
@@ -223,7 +226,7 @@ function slide4() {
 function slide5() {
   document.getElementById("tm-intro").style.display = "none";
   document.getElementById("bg-2").style.top = "0";
-  document.getElementById("tm-origines").style.zIndex = "0";
+  document.getElementById("bg-2").style.zIndex = "2";
 
   document.getElementById("bg-1-bottom").style.top = "-1080px";
   document.getElementById("timeline").style.left = "1920px";
@@ -310,7 +313,7 @@ function slide7() {
   function slide7_2() {
     document.getElementById("1492").style.left = "200px";
 
-    setTimeout(slide7_3, 1000);
+    setTimeout(slide7_3, 500);
   }
   function slide7_3() {
     document.getElementById("1534").style.left = "1160px";

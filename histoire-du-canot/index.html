@@ -50,7 +50,7 @@
         z-index: 1;
       }
       #bg-2 {
-        z-index: 0;
+        z-index: 2;
         display: none;
       }
       #bg-1-bottom {
@@ -163,6 +163,10 @@
         width: 70px;
         height: 70px;
       }
+      #pirogues-div {
+        left: -612px;
+        z-index: 1;
+      }
     </style>
     <script src="./assets/js/script.js" defer></script>
   </head>
@@ -187,10 +191,7 @@
             <img src="./assets/img/interogation.svg" alt="dictionary" />
             <h3>C'est quoi?</h3>
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus laboriosam aspernatur officiis pariatur soluta autem recusandae omnis
-            tenetur ad adipisci.
-          </p>
+          <p>Un canot est une embarcation légère, propulsé avec des pagaies, peut porter de lourde charges en eau peu profonde.</p>
         </div>
         <!-- Etymologie -->
         <div id="etymologie">
@@ -198,11 +199,11 @@
             <img src="./assets/img/dictionary.svg" alt="dictionary" />
             <h3>Étymologie</h3>
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus laboriosam aspernatur officiis pariatur soluta autem recusandae omnis
-            tenetur ad adipisci.
-          </p>
+          <p>Premier nom donné par les colons. Vient espagnol «canoa», qui vient de la langue arawak. (Désignait pirogue)</p>
         </div>
+      </div>
+      <div id="pirogues-div">
+        <img src="./assets/img/pirogues.png" alt="Pirogues" />
       </div>
       <img src="./assets/img/buble-birch.png" alt="brich" class="buble" id="buble-birch" />
       <img src="./assets/img/buble-frene.png" alt="brich" class="buble" id="buble-frene" />
@@ -218,9 +219,8 @@
           <h3>La Pirogue de Pesse</h3>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex quasi unde illo temporibus rem, ipsa voluptatibus voluptate veniam
-          quibusdam quisquam explicabo recusandae debitis beatae. Earum, incidunt! Ducimus unde quibusdam officia commodi eum hic itaque maiores.
-          Natus, nisi magnam voluptas ullam voluptatum, incidunt aut ratione reprehenderit autem quis minus obcaecati?
+          La pirogue est le plus vieux canot que nous avons découvert. Des embarcations similaires ont été retrouvées presque partout dans le monde,
+          mais en Europe, elles ont rapidement évolué vers de plus grands bateaux, qui ont aidé aux explorations.
         </p>
       </div>
       <div class="timeline-elements timeline-pos-1" id="1492">
@@ -228,11 +228,7 @@
           <img src="./assets/img/christophe.jpg" alt="pirogue" />
           <h3>Première mention en Europe</h3>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex quasi unde illo temporibus rem, ipsa voluptatibus voluptate veniam
-          quibusdam quisquam explicabo recusandae debitis beatae. Earum, incidunt! Ducimus unde quibusdam officia commodi eum hic itaque maiores.
-          Natus, nisi magnam voluptas ullam voluptatum, incidunt aut ratione reprehenderit autem quis minus obcaecati?
-        </p>
+        <p>La première apparition du mot «canot» dans les langues européennes vient du voyage de Christophe Colomb dans les Antilles en 1492.</p>
       </div>
       <div class="timeline-elements timeline-pos-2" id="1534">
         <div>
@@ -240,9 +236,9 @@
           <h3>Découverte par Jaques Cartier</h3>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex quasi unde illo temporibus rem, ipsa voluptatibus voluptate veniam
-          quibusdam quisquam explicabo recusandae debitis beatae. Earum, incidunt! Ducimus unde quibusdam officia commodi eum hic itaque maiores.
-          Natus, nisi magnam voluptas ullam voluptatum, incidunt aut ratione reprehenderit autem quis minus obcaecati?
+          Plus tard, en 1534, Jacques Cartier découvre le canot que les peuples Algonquiens utilisent en observant d’abord celui des Mi’kmaqs. Suite à
+          ce premier voyage, les colons ont commencé à utiliser le canot comme moyen de transport. Les trappeurs, coureurs des bois, marchands et
+          voyageurs l’utilisaient.
         </p>
       </div>
     </main>
