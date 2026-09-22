@@ -65,6 +65,14 @@ function slideMove() {
     bCanMoveForward = false;
     bCanMoveBackward = false;
     slide9();
+  } else if (nSlideNeed === 10 && nSlideCurrent != 10) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide10();
+  } else if (nSlideNeed === 11 && nSlideCurrent != 11) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide11();
   }
 }
 
@@ -87,21 +95,21 @@ function slide2() {
   document.getElementById("tm-intro").style.right = "0";
   document.getElementById("tm-intro").style.top = "0";
   document.getElementById("tm-intro").style.position = "relative";
-  document.getElementById("tm-intro").style.fontSize = "96px";
+  document.getElementById("tm-intro").style.fontSize = "70px";
 
   // Origines
   document.getElementById("tm-origines").style.display = "block";
   document.getElementById("tm-origines").style.right = "0";
   document.getElementById("tm-origines").style.top = "0";
   document.getElementById("tm-origines").style.position = "relative";
-  document.getElementById("tm-origines").style.fontSize = "96px";
+  document.getElementById("tm-origines").style.fontSize = "70px";
   // Fab
   document.getElementById("tm-fab").style.color = "rgba(0,0,0,0.6)";
   document.getElementById("tm-fab").style.display = "block";
   document.getElementById("tm-fab").style.right = "0";
   document.getElementById("tm-fab").style.top = "0";
   document.getElementById("tm-fab").style.position = "relative";
-  document.getElementById("tm-fab").style.fontSize = "96px";
+  document.getElementById("tm-fab").style.fontSize = "70px";
 
   // Evo
   document.getElementById("tm-evo").style.color = "rgba(0,0,0,0.6)";
@@ -109,7 +117,23 @@ function slide2() {
   document.getElementById("tm-evo").style.right = "0";
   document.getElementById("tm-evo").style.top = "0";
   document.getElementById("tm-evo").style.position = "relative";
-  document.getElementById("tm-evo").style.fontSize = "96px";
+  document.getElementById("tm-evo").style.fontSize = "70px";
+
+  // Today
+  document.getElementById("tm-today").style.color = "rgba(0,0,0,0.6)";
+  document.getElementById("tm-today").style.display = "block";
+  document.getElementById("tm-today").style.right = "0";
+  document.getElementById("tm-today").style.top = "0";
+  document.getElementById("tm-today").style.position = "relative";
+  document.getElementById("tm-today").style.fontSize = "70px";
+
+  // Quizz
+  document.getElementById("tm-quizz").style.color = "rgba(0,0,0,0.6)";
+  document.getElementById("tm-quizz").style.display = "block";
+  document.getElementById("tm-quizz").style.right = "0";
+  document.getElementById("tm-quizz").style.top = "0";
+  document.getElementById("tm-quizz").style.position = "relative";
+  document.getElementById("tm-quizz").style.fontSize = "70px";
 
   // Conclusion
   document.getElementById("tm-conclusion").style.color = "rgba(0,0,0,0.6)";
@@ -117,7 +141,7 @@ function slide2() {
   document.getElementById("tm-conclusion").style.right = "0";
   document.getElementById("tm-conclusion").style.top = "0";
   document.getElementById("tm-conclusion").style.position = "relative";
-  document.getElementById("tm-conclusion").style.fontSize = "96px";
+  document.getElementById("tm-conclusion").style.fontSize = "70px";
 
   document.getElementById("intro-text").style.left = "-1000px";
 
@@ -141,6 +165,8 @@ function slide3() {
   document.getElementById("pirogues-div").style.display = "block";
   document.getElementById("tm-fab").style.right = "-105vw";
   document.getElementById("tm-evo").style.right = "-105vw";
+  document.getElementById("tm-today").style.right = "-105vw";
+  document.getElementById("tm-quizz").style.right = "-105vw";
   document.getElementById("tm-conclusion").style.right = "-105vw";
 
   document.getElementById("intro-text").style.display = "initial";
@@ -201,9 +227,17 @@ function slide4() {
   document.getElementById("tm-evo").style.position = "absolute";
   document.getElementById("tm-evo").style.fontSize = "125px";
 
+  // Evo
+  document.getElementById("tm-quizz").style.top = "-50px";
+  document.getElementById("tm-quizz").style.right = "-105vw";
+  document.getElementById("tm-quizz").style.color = "rgba(255,255,255,0.6)";
+  document.getElementById("tm-quizz").style.position = "absolute";
+  document.getElementById("tm-quizz").style.fontSize = "125px";
+
   // Conclusion
   document.getElementById("tm-conclusion").style.right = "-105vw";
-  document.getElementById("tm-conclusion").style.top = "-50px";
+  document.getElementById("tm-conclusion").style.top = "-105px";
+  document.getElementById("tm-quizz").style.color = "rgba(255,255,255,0.6)";
   document.getElementById("tm-evo").style.position = "absolute";
   document.getElementById("tm-conclusion").style.fontSize = "125px";
 
@@ -356,6 +390,7 @@ function slide8() {
   document.getElementById("1950").style.display = "block";
   document.getElementById("1980").style.left = "100px";
   document.getElementById("1980").style.display = "block";
+  document.getElementById("current-days").style.display = "none";
 
   setTimeout(slide8_1, 1000);
   function slide8_1() {
@@ -379,8 +414,18 @@ function slide8() {
 function slide9() {
   document.getElementById("1800").style.left = "-740px";
   document.getElementById("1900").style.left = "100px";
+  document.getElementById("1800").style.display = "block";
+  document.getElementById("1900").style.display = "block";
+  document.getElementById("1950").style.display = "block";
+  document.getElementById("1980").style.display = "block";
   document.getElementById("1492").style.display = "none";
   document.getElementById("1534").style.display = "none";
+  document.getElementById("current-days").style.left = "-1000px";
+  document.getElementById("current-days").style.display = "block";
+  document.getElementById("tm-evo").style.right = "-50vw";
+  document.getElementById("tm-evo").style.display = "block";
+  document.getElementById("bg-2-left").style.display = "block";
+  document.getElementById("bg-2-left-more").style.display = "block";
 
   setTimeout(slide9_1, 1000);
   function slide9_1() {
@@ -397,7 +442,47 @@ function slide9() {
     document.getElementById("1980").style.left = "1160px";
 
     nSlideCurrent = 9;
-    // bCanMoveForward = true;
+    bCanMoveForward = true;
     bCanMoveBackward = true;
   }
+}
+function slide10() {
+  document.getElementById("1950").style.left = "-740px";
+  document.getElementById("1980").style.left = "100px";
+  document.getElementById("1800").style.display = "none";
+  document.getElementById("1900").style.display = "none";
+  document.getElementById("tm-evo").style.right = "-105vw";
+  document.getElementById("black-sqr").style.display = "none";
+  document.getElementById("black-sqr").style.opacity = "0";
+
+  setTimeout(slide10_1, 1000);
+  function slide10_1() {
+    document.getElementById("timeline").style.left = "-7636px";
+    document.getElementById("1950").style.display = "none";
+    document.getElementById("1980").style.display = "none";
+
+    setTimeout(slide10_2, 1000);
+  }
+  function slide10_2() {
+    document.getElementById("current-days").style.left = "200px";
+    setTimeout(slide10_3, 1000);
+  }
+  function slide10_3() {
+    document.getElementById("bg-2-left").style.display = "none";
+    document.getElementById("bg-2-left-more").style.display = "none";
+
+    nSlideCurrent = 10;
+    bCanMoveForward = true;
+    bCanMoveBackward = true;
+  }
+}
+function slide11() {
+  document.getElementById("current-days").style.left = "-1200px";
+  document.getElementById("timeline").style.left = "-9556px";
+
+  document.getElementById("black-sqr").style.display = "block";
+  document.getElementById("black-sqr").style.opacity = "1";
+  nSlideCurrent = 11;
+  // bCanMoveForward = true;
+  bCanMoveBackward = true;
 }

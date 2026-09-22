@@ -25,7 +25,7 @@
       }
       h2 {
         font-family: lexend-black;
-        font-size: 96px;
+        font-size: 70px;
       }
       main {
         /* margin-left: 1000px; */
@@ -177,6 +177,41 @@
         margin-left: 260px;
         width: 800px;
       }
+      #current-days {
+        max-width: fit-content;
+        max-height: fit-content;
+        top: 50px;
+        left: -1000px;
+        padding: 0 20px;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      #current-days h2 {
+        position: relative;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 125px;
+        right: 0;
+        top: 0;
+      }
+      #current-days div {
+        position: relative;
+        display: block;
+        flex-direction: unset;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: -20px;
+        margin-top: 10px;
+      }
+      #current-days p {
+        font-size: 35px;
+      }
+      #black-sqr {
+        width: 1920px;
+        height: 1080px;
+        z-index: 3;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        opacity: 0;
+      }
     </style>
     <script src="./assets/js/script.js" defer></script>
   </head>
@@ -192,6 +227,8 @@
         <h2 id="tm-origines">Origines |</h2>
         <h2 id="tm-fab">Fabrication |</h2>
         <h2 id="tm-evo">Évolution |</h2>
+        <h2 id="tm-today">De nos jours |</h2>
+        <h2 id="tm-quizz">Jéopardy |</h2>
         <h2 id="tm-conclusion">Conclusion |</h2>
       </div>
       <div class="text-block" id="intro-text">
@@ -235,9 +272,9 @@
           <img src="./assets/img/pirogue.jpg" alt="pirogue" />
           <h3>La Pirogue de Pesse</h3>
         </div>
-        <p>- Plus vieilles embarcations découvertes</p>
+        <p>- Plus vieille embarcation découverte</p>
         <p>- Peut être trouvée partout dans le monde</p>
-        <p>- En Europe, ont rapidement évolué en embarcation de plus grande taille</p>
+        <p>- En Europe, ont rapidement évoluée en embarcation de plus grande taille</p>
       </div>
       <div class="timeline-elements timeline-pos-1" id="1492">
         <div>
@@ -258,19 +295,21 @@
       <div class="timeline-elements timeline-pos-1" id="1800">
         <div>
           <img src="./assets/img/1874.jpg" alt="Canot en 1874" />
-          <h3>Grande popularité du canot</h3>
+          <h3>Un loisir!</h3>
         </div>
-        <p>- Première usines de canots</p>
-        <p>- Création de plusieurs assossiations</p>
+        <p>- Premières usines de canots</p>
         <p>- Activité récréative pour les bourgeois et les militaires</p>
+        <p>- Britanique organise des course de canot dès 1970 au Canada</p>
+        <p>- Création de plusieurs assossiations</p>
       </div>
       <div class="timeline-elements timeline-pos-2" id="1900">
         <div>
           <img src="./assets/img/train.jpg" alt="Construction du chemin de fer" />
-          <h3>La chute</h3>
+          <h3>La chute..</h3>
         </div>
         <p>- Le canot perd grandement en popularité au profit des chemins de fer</p>
         <p>- Ironique car ces embarquations ont beaucoup servit durant leur construction</p>
+        <p>- Canot devient quand même une discipline aux Olympiques en 1936</p>
       </div>
       <div class="timeline-elements timeline-pos-1" id="1950">
         <div>
@@ -287,6 +326,16 @@
         <p>- Valorisation du sport et de la reconnection avec la nature</p>
         <p>- Amélioration des technologies le rend plus accessible</p>
       </div>
+      <div class="timeline-elements timeline-pos-1" id="current-days">
+        <h2>| De nos jours</h2>
+        <div>
+          <p>- Plusieurs embarquations dérivées du canot d'écorce</p>
+          <p>- Maintenant presqu'entièrement un loisir</p>
+          <p>- Fait de matériaux plus efficaces</p>
+          <p>- Canot camping est populaire</p>
+        </div>
+      </div>
+      <div id="black-sqr"></div>
     </main>
   </body>
 </html>
