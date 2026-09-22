@@ -73,6 +73,10 @@ function slideMove() {
     bCanMoveForward = false;
     bCanMoveBackward = false;
     slide11();
+  } else if (nSlideNeed === 12 && nSlideCurrent != 12) {
+    bCanMoveForward = false;
+    bCanMoveBackward = false;
+    slide12();
   }
 }
 
@@ -427,6 +431,8 @@ function slide9() {
   document.getElementById("bg-2-left").style.display = "block";
   document.getElementById("bg-2-left-more").style.display = "block";
 
+  document.getElementById("tm-quizz").style.display = "none";
+
   setTimeout(slide9_1, 1000);
   function slide9_1() {
     document.getElementById("timeline").style.left = "-5716px";
@@ -452,12 +458,21 @@ function slide10() {
   document.getElementById("1800").style.display = "none";
   document.getElementById("1900").style.display = "none";
   document.getElementById("tm-evo").style.right = "-105vw";
-  document.getElementById("black-sqr").style.display = "none";
-  document.getElementById("black-sqr").style.opacity = "0";
+
+  document.getElementById("quizz-q1").style.display = "none";
+  document.getElementById("quizz-q2").style.display = "none";
+  document.getElementById("quizz-q3").style.display = "none";
+
+  document.getElementById("tm-quizz").style.right = "-105vw";
+
+  document.getElementById("tm-quizz").style.display = "block";
+
+  document.getElementById("quizz-exemple").style.right = "-1920px";
 
   setTimeout(slide10_1, 1000);
   function slide10_1() {
     document.getElementById("timeline").style.left = "-7636px";
+    document.getElementById("timeline").style.display = "inline";
     document.getElementById("1950").style.display = "none";
     document.getElementById("1980").style.display = "none";
 
@@ -465,6 +480,7 @@ function slide10() {
   }
   function slide10_2() {
     document.getElementById("current-days").style.left = "200px";
+    document.getElementById("current-days").style.display = "block";
     setTimeout(slide10_3, 1000);
   }
   function slide10_3() {
@@ -476,13 +492,44 @@ function slide10() {
     bCanMoveBackward = true;
   }
 }
+
+// Jeopardy
 function slide11() {
   document.getElementById("current-days").style.left = "-1200px";
   document.getElementById("timeline").style.left = "-9556px";
 
-  document.getElementById("black-sqr").style.display = "block";
-  document.getElementById("black-sqr").style.opacity = "1";
+  document.getElementById("tm-quizz").style.right = "-50vw";
+  document.getElementById("tm-quizz").style.display = "block";
+
+  document.getElementById("quizz-exemple").style.right = "0";
+
+  document.getElementById("quizz-q1").style.right = "-1920px";
+  document.getElementById("quizz-q2").style.right = "-1920px";
+  document.getElementById("quizz-q3").style.right = "-1920px";
+
+  document.getElementById("quizz-q1").style.display = "block";
+  document.getElementById("quizz-q2").style.display = "block";
+  document.getElementById("quizz-q3").style.display = "block";
+
   nSlideCurrent = 11;
+  bCanMoveForward = true;
+  bCanMoveBackward = true;
+}
+function slide12() {
+  document.getElementById("current-days").style.display = "none";
+  document.getElementById("timeline").style.display = "none";
+
+  document.getElementById("quizz-exemple").style.right = "1920px";
+
+  document.getElementById("quizz-q1").style.right = "0";
+  document.getElementById("quizz-q2").style.right = "0";
+  document.getElementById("quizz-q3").style.right = "0";
+
+  document.getElementById("quizz-q1").style.display = "block";
+  document.getElementById("quizz-q2").style.display = "block";
+  document.getElementById("quizz-q3").style.display = "block";
+
+  nSlideCurrent = 12;
   // bCanMoveForward = true;
   bCanMoveBackward = true;
 }

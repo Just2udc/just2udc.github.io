@@ -204,13 +204,48 @@
       #current-days p {
         font-size: 35px;
       }
-      #black-sqr {
-        width: 1920px;
-        height: 1080px;
-        z-index: 3;
-        background-color: rgba(0, 0, 0, 0.7);
-        display: none;
+      .quizz-box {
+        position: relative;
+        z-index: 11;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 500px;
+        height: 400px;
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        right: -1920px;
+      }
+      .quizz-box h3 {
+        font-size: 55px;
+        font-family: lexend-regular;
+        color: rgba(255, 255, 255, 0.6);
+        position: relative;
+        font-weight: bolder;
+      }
+      .quizz-box p {
+        font-size: 40px;
+        font-family: lexend-regular;
+        color: rgba(255, 255, 255, 0.6);
+        position: relative;
+        margin-top: 20px;
+      }
+      .quizz-box .quizz-question {
         opacity: 0;
+      }
+      .quizz-box:hover .quizz-question {
+        opacity: 1;
+      }
+      #quizz {
+        margin: 360px 210px;
+        top: 0;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      #quizz-exemple {
+        margin: 360px auto;
       }
     </style>
     <script src="./assets/js/script.js" defer></script>
@@ -221,7 +256,7 @@
       <img src="./assets/img/bg-1-bottom.png" alt="Title 1" class="img" id="bg-1-bottom" />
       <img src="./assets/img/bg-2.jpg" alt="bark-canoe" id="bg-2" />
 
-      <img src="./assets/img/title-1-redac.png" alt="Title 1" class="img" id="title-1" />
+      <img src="./assets/img/title-1.png" alt="Title 1" class="img" id="title-1" />
       <div id="table-matieres">
         <h2 id="tm-intro">Intro |</h2>
         <h2 id="tm-origines">Origines |</h2>
@@ -335,7 +370,24 @@
           <p>- Canot camping est populaire</p>
         </div>
       </div>
-      <div id="black-sqr"></div>
+      <div class="quizz-box" id="quizz-exemple">
+        <h3 class="quizz-title">Exemple</h3>
+        <p class="quizz-question">C'est la couleur du cheval blanc de Napoléon</p>
+      </div>
+      <div id="quizz">
+        <div class="quizz-box" id="quizz-q1">
+          <h3 class="quizz-title">Question 1</h3>
+          <p class="quizz-question">C'est la plus vielle embarcation découverte.</p>
+        </div>
+        <div class="quizz-box" id="quizz-q2">
+          <h3 class="quizz-title">Question 2</h3>
+          <p class="quizz-question">Il a introduit pour la première fois le mot canot en Europe.</p>
+        </div>
+        <div class="quizz-box" id="quizz-q3">
+          <h3 class="quizz-title">Question 3</h3>
+          <p class="quizz-question">Pour la pêche, la chasse et le transport.</p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
