@@ -164,8 +164,18 @@
         height: 70px;
       }
       #pirogues-div {
-        left: -612px;
+        left: -1400px;
         z-index: 1;
+        display: none;
+      }
+      #pirogues-div li {
+        position: relative;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: lexend-regular;
+        font-size: 40px;
+        z-index: 5;
+        margin-left: 260px;
+        width: 800px;
       }
     </style>
     <script src="./assets/js/script.js" defer></script>
@@ -191,7 +201,7 @@
             <img src="./assets/img/interogation.svg" alt="dictionary" />
             <h3>C'est quoi?</h3>
           </div>
-          <p>Un canot est une embarcation légère, propulsé avec des pagaies, peut porter de lourde charges en eau peu profonde.</p>
+          <p>Un canot est une embarcation légère, propulsé avec des pagaies, peut porter de lourdes charges en eau peu profonde.</p>
         </div>
         <!-- Etymologie -->
         <div id="etymologie">
@@ -199,11 +209,18 @@
             <img src="./assets/img/dictionary.svg" alt="dictionary" />
             <h3>Étymologie</h3>
           </div>
-          <p>Premier nom donné par les colons. Vient espagnol «canoa», qui vient de la langue arawak. (Désignait pirogue)</p>
+          <p>Premier nom donné par les colons. Vient espagnol «canoa», vient lui-même de la langue arawak. (Désignait pirogue)</p>
         </div>
       </div>
       <div id="pirogues-div">
         <img src="./assets/img/pirogues.png" alt="Pirogues" />
+        <ol>
+          <li style="margin-top: 240px; margin-left: 580px">Date préhistoire</li>
+          <li style="margin-left: 550px">Canot plus moderne utilisé par les premières nations</li>
+          <li style="margin-left: 480px">Utilisé pour la pêche, la chasse et le transport</li>
+          <li style="margin-left: 350px">Élément central de la culture autochtone</li>
+          <li>Facilite les échanges</li>
+        </ol>
       </div>
       <img src="./assets/img/buble-birch.png" alt="brich" class="buble" id="buble-birch" />
       <img src="./assets/img/buble-frene.png" alt="brich" class="buble" id="buble-frene" />
@@ -218,28 +235,57 @@
           <img src="./assets/img/pirogue.jpg" alt="pirogue" />
           <h3>La Pirogue de Pesse</h3>
         </div>
-        <p>
-          La pirogue est le plus vieux canot que nous avons découvert. Des embarcations similaires ont été retrouvées presque partout dans le monde,
-          mais en Europe, elles ont rapidement évolué vers de plus grands bateaux, qui ont aidé aux explorations.
-        </p>
+        <p>- Plus vieilles embarcations découvertes</p>
+        <p>- Peut être trouvée partout dans le monde</p>
+        <p>- En Europe, ont rapidement évolué en embarcation de plus grande taille</p>
       </div>
       <div class="timeline-elements timeline-pos-1" id="1492">
         <div>
-          <img src="./assets/img/christophe.jpg" alt="pirogue" />
+          <img src="./assets/img/christophe.jpg" alt="Christophe Colomb" />
           <h3>Première mention en Europe</h3>
         </div>
-        <p>La première apparition du mot «canot» dans les langues européennes vient du voyage de Christophe Colomb dans les Antilles en 1492.</p>
+        <p>- Première mention du canot en Europe: Christophe Colomb après son voyage dans les Antilles</p>
       </div>
       <div class="timeline-elements timeline-pos-2" id="1534">
         <div>
-          <img src="./assets/img/jacques.jpg" alt="pirogue" />
-          <h3>Découverte par Jaques Cartier</h3>
+          <img src="./assets/img/jacques.jpg" alt="Jacques Cartier" />
+          <h3>Découverte par Jacques Cartier</h3>
         </div>
-        <p>
-          Plus tard, en 1534, Jacques Cartier découvre le canot que les peuples Algonquiens utilisent en observant d’abord celui des Mi’kmaqs. Suite à
-          ce premier voyage, les colons ont commencé à utiliser le canot comme moyen de transport. Les trappeurs, coureurs des bois, marchands et
-          voyageurs l’utilisaient.
-        </p>
+        <p>- Cartier découvre le canot des Algonquiens</p>
+        <p>- Colons commence à utiliser ce mode de transport</p>
+        <p>- Trappeurs, coureurs des bois, marchands et voyageurs</p>
+      </div>
+      <div class="timeline-elements timeline-pos-1" id="1800">
+        <div>
+          <img src="./assets/img/1874.jpg" alt="Canot en 1874" />
+          <h3>Grande popularité du canot</h3>
+        </div>
+        <p>- Première usines de canots</p>
+        <p>- Création de plusieurs assossiations</p>
+        <p>- Activité récréative pour les bourgeois et les militaires</p>
+      </div>
+      <div class="timeline-elements timeline-pos-2" id="1900">
+        <div>
+          <img src="./assets/img/train.jpg" alt="Construction du chemin de fer" />
+          <h3>La chute</h3>
+        </div>
+        <p>- Le canot perd grandement en popularité au profit des chemins de fer</p>
+        <p>- Ironique car ces embarquations ont beaucoup servit durant leur construction</p>
+      </div>
+      <div class="timeline-elements timeline-pos-1" id="1950">
+        <div>
+          <img src="./assets/img/fih.jpg" alt="Pêcheur vers 1950" />
+          <h3>Un retour en force</h3>
+        </div>
+        <p>- Utile pour la chasse et la pêche dans les zones reculées</p>
+      </div>
+      <div class="timeline-elements timeline-pos-2" id="1980">
+        <div>
+          <img src="./assets/img/1980.jpg" alt="Canot camping en 1980" />
+          <h3>Le retour du canot camping!</h3>
+        </div>
+        <p>- Valorisation du sport et de la reconnection avec la nature</p>
+        <p>- Amélioration des technologies le rend plus accessible</p>
       </div>
     </main>
   </body>
